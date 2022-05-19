@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><font style="vertical-align: inherit;"><font color="green" style="vertical-align: inherit;">Russia Today News</font></font></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Переключить навигацию">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/NewsPost/General"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Main</font></font></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/NewsPost/Sport"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sport</font></font></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/NewsPost/Business"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Business</font></font></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/NewsPost/Russia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Russia</font></font></a>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                        <button class="btn btn-outline-success" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Поиск</font></font></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container mt-5">
+        @RenderBody()
+    </div>
+
+    <footer class="container">
+        <p class="float-end"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Вернуться к вершине</font></font></a></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2022 Company Mirtek, Inc. · </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Конфиденциальность</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Условия</font></font></a></p>
+    </footer>
+
+    <script src="~/js/bootstrap.min.js"></script>
+</body>
+</html>
